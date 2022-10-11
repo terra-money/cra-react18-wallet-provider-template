@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import { ConnectSample } from "./components/ConnectSample";
+import { CW20TokensSample } from "./components/CW20TokensSample";
+import { NetworkSample } from "./components/NetworkSample";
+import { QuerySample } from "./components/QuerySample";
+import { SignBytesSample } from "./components/SignBytesSample";
+import { SignSample } from "./components/SignSample";
+import { TxSample } from "./components/TxSample";
+
+const Main = styled.main`
+  margin: 20;
+  display: "flex";
+  flex-direction: "column";
+  gap: 40;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <ConnectSample />
+      <QuerySample />
+      <TxSample />
+      <SignSample />
+      <SignBytesSample />
+      <CW20TokensSample />
+      <NetworkSample />
+    </Main>
   );
 }
 
