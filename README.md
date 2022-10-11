@@ -4,7 +4,7 @@ This is an example of performing basic connect, tx, and query actions in a react
 
 # Preview this template on CodeSandbox
 
-<https://githubbox.com/terra-money/wallet-provider/tree/main/templates/create-react-app>
+<https://githubbox.com/terra-money/CRA-React18-wallet-provider-template>
 
 # How to use this template
 
